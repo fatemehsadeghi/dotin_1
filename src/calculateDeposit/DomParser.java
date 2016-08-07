@@ -29,10 +29,10 @@ public class DomParser {
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element eElement = (Element) nNode;
                     eElement.getAttribute("rollno");
-                    eElement.getElementsByTagName("custumerNumber").item(0).getTextContent();
+                    eElement.getElementsByTagName("customerNumber").item(0).getTextContent();
                     eElement.getElementsByTagName("depositType").item(0).getTextContent();
-                    eElement.getElementsByTagName("duration").item(0).getTextContent();
-                    eElement.getElementsByTagName("marks").item(0).getTextContent();
+                    eElement.getElementsByTagName("durationInDays").item(0).getTextContent();
+                    //eElement.getElementsByTagName("marks").item(0).getTextContent();
                 }
             }
         } catch (Exception e) {

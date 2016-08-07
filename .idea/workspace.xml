@@ -38,8 +38,8 @@
       <file leaf-file-name="DomParser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/calculateDeposit/DomParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+            <state relative-caret-position="257">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -696,15 +696,15 @@
       <option name="presentableId" value="Default" />
       <updated>1470390597155</updated>
       <workItem from="1470390608417" duration="3553000" />
-      <workItem from="1470463757595" duration="8858000" />
+      <workItem from="1470463757595" duration="9330000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12411000" />
+    <option name="totallyTimeSpent" value="12883000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -846,8 +846,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calculateDeposit/DomParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+        <state relative-caret-position="257">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
