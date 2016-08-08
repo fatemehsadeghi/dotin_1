@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 public class ShortTerm extends DepositType {
     public ShortTerm() {
 
-       super.interestRate = new BigDecimal("10");
+       super.interestRate = 10;
 
 
 

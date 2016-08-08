@@ -9,7 +9,7 @@ public class Qarz extends DepositType {
 
     public Qarz() {
 
-        super.interestRate = new BigDecimal("10");
+        super.interestRate = 20;
 
     }
 

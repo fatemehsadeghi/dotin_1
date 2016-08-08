@@ -7,7 +7,7 @@ import java.math.BigDecimal;
  */
 public class LongTerm extends DepositType{
     public LongTerm(){
-        super.interestRate = new BigDecimal("30");
+        super.interestRate = 30;
 
     }
 }
