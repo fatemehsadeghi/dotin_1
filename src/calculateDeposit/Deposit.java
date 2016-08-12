@@ -1,48 +1,78 @@
 package calculateDeposit;
-
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
-
-/**
- * Created by fateme on 05/08/2016.
- */
+import java.math.RoundingMode;
 public class Deposit {
-    protected String customerNumber;
-    protected BigDecimal payedInterest;
-    protected BigDecimal depositBalance;
-    // protected BigDecimal interestRate;
-    protected int durationInDays;
-    protected int time = 36500;
-    DepositType depositType;
+    private String customerNumber="20";
+    private BigDecimal payedInterest = new BigDecimal(1);
+    private BigDecimal depositBalance;
+    private int durationInDays;
+    private DepositType depositType  ;
+    final int TIME = 36500;
+    //DepositType interestRate ;
 
-    public Deposit(String cn, BigDecimal pi, BigDecimal db) {
-        this.customerNumber = cn;
-        this.payedInterest = pi;
-        this.depositBalance = db;
-
+    public Deposit(String customerNumber, BigDecimal depositBalance, int durationInDays, DepositType depositType , BigDecimal payedInterest ) {
+        this.customerNumber = customerNumber;
+        this.depositType =  depositType;
+        this.durationInDays = durationInDays;
+        this.depositBalance = depositBalance;
+        this.payedInterest = payedInterest;
     }
 
-    public Deposit(String customerNumber, BigDecimal payedInterest, BigDecimal depositBalance, int durationInDays) {
+    public String getCustomerNumber() {
+        return customerNumber;
     }
 
-    public Deposit() {
+    public void setCustomerNumber(String name) {
+        this.customerNumber = customerNumber;
+    }
 
+    public DepositType getDepositType() {
+        return depositType;
+    }
+    public void setDepositType(DepositType depositType) {
+        this.customerNumber = customerNumber;
+    }
+
+    public BigDecimal getPayedInterest() {
+        return payedInterest;
+    }
+
+    public void setPayedInterest(BigDecimal payedInterest) {
+        this.payedInterest = payedInterest;
+    }
+
+    public BigDecimal getDepositBalance() {
+        return depositBalance;
+    }
+
+    public void setDepositBalance(BigDecimal depositBalance) {
+        this.depositBalance = depositBalance;
+    }
+
+    public int getDurationInDays() {
+        return durationInDays;
+    }
+
+    public void setDurationInDays(int durationInDays) {
+        this.durationInDays = durationInDays;
     }
 
 
-    public BigDecimal calculateInterest(BigDecimal payedInterest, BigDecimal depositeBalance, int interestRate, int durationInDays, int time) {
-        payedInterest = payedInterest.multiply(depositeBalance);
+
+    public void calculateInterest(BigDecimal depositBalance, int interestRate, int durationInDays, int TIME) {
+        payedInterest = payedInterest.multiply(depositBalance);
         payedInterest = payedInterest.multiply(new BigDecimal(interestRate));
         payedInterest = payedInterest.multiply(new BigDecimal(durationInDays));
-        payedInterest = payedInterest.divide(new BigDecimal(time));
-        return payedInterest;
+        //System.out.println(payedInterest);
+        payedInterest = payedInterest.divide(new BigDecimal(TIME), 20, RoundingMode.HALF_UP);
+        System.out.println(payedInterest);
+
     }
 
     public static void main(String[] args) {
         //BigDecimal Pi = new BigDecimal();
-        System.out.println("salam");
-        Deposit d = new Deposit();
-        List<Deposit> deposits = new ArrayList<Deposit>();
+//        System.out.println("salam");
+//        Deposit d = new Deposit();
+//        List<Deposit> deposits = new ArrayList<Deposit>();
     }
 }

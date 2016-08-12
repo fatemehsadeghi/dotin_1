@@ -1,20 +1,20 @@
 <deposits>
 	<deposit>
 		<customerNumber>534900</customerNumber>
-		<depositeType>ShortTerm</depositeType>
-		<depositeBalance>200000</depositeBalance>
+		<depositType>calculateDeposit.ShortTerm</depositType>
+		<depositBalance>200000</depositBalance>
 		<durationInDays>25</durationInDays>
 	</deposit>
 	<deposit>
 		<customerNumber>48483</customerNumber>
-		<depositeType>Qarz</depositeType>
-		<depositeBalance>145000</depositeBalance>
+		<depositType>calculateDeposit.Qarz</depositType>
+		<depositBalance>145000</depositBalance>
 		<durationInDays>38</durationInDays>
 	</deposit>
 	<deposit>
 		<customerNumber>658951</customerNumber>
-		<depositeType>LongTerm</depositeType>
-		<depositeBalance>545966600000</depositeBalance>
+		<depositType>calculateDeposit.LongTerm</depositType>
+		<depositBalance>545966600000</depositBalance>
 		<durationInDays>1000</durationInDays>
 	</deposit>
 </deposits>

@@ -6,11 +6,11 @@ import java.math.BigDecimal;
  * Created by fateme on 06/08/2016.
  */
 public class Qarz extends DepositType {
+      public  Qarz (){
 
-    public Qarz() {
+            super.interestRate = 20;
+      }
 
-        super.interestRate = 20;
 
-    }
 
 }
