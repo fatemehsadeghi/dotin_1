@@ -1,18 +1,19 @@
 package calculateDeposit;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-public class Deposit {
-    private String customerNumber="20";
+
+public class Deposit implements Comparable<Deposit> {
+    private String customerNumber;
     private BigDecimal payedInterest = new BigDecimal(1);
     private BigDecimal depositBalance;
     private int durationInDays;
-    private DepositType depositType  ;
+    private DepositType depositType;
     final int TIME = 36500;
-    //DepositType interestRate ;
 
-    public Deposit(String customerNumber, BigDecimal depositBalance, int durationInDays, DepositType depositType , BigDecimal payedInterest ) {
+    public Deposit(String customerNumber, BigDecimal depositBalance, int durationInDays, DepositType depositType, BigDecimal payedInterest) {
         this.customerNumber = customerNumber;
-        this.depositType =  depositType;
+        this.depositType = depositType;
         this.durationInDays = durationInDays;
         this.depositBalance = depositBalance;
         this.payedInterest = payedInterest;
@@ -29,6 +30,7 @@ public class Deposit {
     public DepositType getDepositType() {
         return depositType;
     }
+
     public void setDepositType(DepositType depositType) {
         this.customerNumber = customerNumber;
     }
@@ -58,21 +60,39 @@ public class Deposit {
     }
 
 
-
     public void calculateInterest(BigDecimal depositBalance, int interestRate, int durationInDays, int TIME) {
+        //if (interestRate == 0){
+        //payedInterest =
         payedInterest = payedInterest.multiply(depositBalance);
         payedInterest = payedInterest.multiply(new BigDecimal(interestRate));
         payedInterest = payedInterest.multiply(new BigDecimal(durationInDays));
-        //System.out.println(payedInterest);
         payedInterest = payedInterest.divide(new BigDecimal(TIME), 20, RoundingMode.HALF_UP);
         System.out.println(payedInterest);
+
 
     }
 
     public static void main(String[] args) {
-        //BigDecimal Pi = new BigDecimal();
-//        System.out.println("salam");
-//        Deposit d = new Deposit();
-//        List<Deposit> deposits = new ArrayList<Deposit>();
+
+    }
+
+    public int compareTo(Deposit deposit) {
+        int resultOfCompare = deposit.getPayedInterest().compareTo(deposit.getPayedInterest());
+
+        if (resultOfCompare == 0) {
+            resultOfCompare = 0;
+        }   //return 0;
+        //System.out.println(str1);
+        else if (resultOfCompare > 1)
+        //System.out.println(str2);
+        {
+            resultOfCompare = 1;
+        }   //return 1;
+        else if (resultOfCompare < -1) {
+            resultOfCompare = -1;
+        }        //System.out.println(str3);
+        return resultOfCompare;
+        // return resustOfCompare;
     }
 }
+

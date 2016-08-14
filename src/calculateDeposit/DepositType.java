@@ -1,12 +1,10 @@
 package calculateDeposit;
 
-import java.math.BigDecimal;
-
 public class DepositType {
     public void setInterestRate() {
     }
-    
-   protected int interestRate;
+
+    protected int interestRate;
 
 
     public void setInterestRate(int interestRate) {
@@ -18,5 +16,4 @@ public class DepositType {
     }
 
 
-    
 }
